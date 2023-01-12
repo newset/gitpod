@@ -1,4 +1,8 @@
-image: iocmajiang/majiang
+tasks:
+  - init: docker-compose pull iocmajiang/majiang
+    command: |
+      docker run -d --name majiang -p 3000:3000 iocmajiang/majiang
+
 ports:
   - name: Website
     port: 3000
