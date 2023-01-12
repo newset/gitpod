@@ -1,0 +1,5 @@
+image: iocmajiang/majiang
+ports:
+  - name: Website
+    port: 3000
+    onOpen: open-preview
