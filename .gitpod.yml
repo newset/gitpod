@@ -1,5 +1,5 @@
 tasks:
-  - init: docker-compose pull iocmajiang/majiang
+  - init: docker pull iocmajiang/majiang
     command: |
       docker run -d --name majiang -p 3000:3000 iocmajiang/majiang
 
