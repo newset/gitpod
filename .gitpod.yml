@@ -2,7 +2,7 @@ tasks:
 #   - init: docker pull iocmajiang/majiang
 #     command: |
 #       docker run -d --name majiang -p 3000:3000 iocmajiang/majiang
-  - supabase: git clone --depth 1 https://github.com/supabase/supabase
+  - init: git clone --depth 1 https://github.com/supabase/supabase
     command: |
       cd supabase/docker
       cp .env.example .env
